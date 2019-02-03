@@ -17,7 +17,8 @@ def urlify(string, length):
             new_index -= 1
 
     return string
-
+def urlify_cruxed(string):
+    return "%20".join(string.strip().split(' '))
 
 class Test(unittest.TestCase):
     '''Test Cases'''
